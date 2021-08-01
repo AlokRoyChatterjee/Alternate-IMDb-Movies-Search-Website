@@ -31,10 +31,10 @@ const movieinfo = (movies) => {
       alt="${title}"
     />
     <div class="movie-info">
-      <h3 style="font-size:30px;">${title}</h3>
+      <h3 style="font-size:80px;">${title}</h3>
     </div>
-    <div style="font-size:30px;"class="overview">
-      <h3 style="font-size:30px;">Movie Info</h3>
+    <div style="font-size:80px;"class="overview">
+      <h3 style="font-size:80px;">Movie Info</h3>
       ${overview}
     </div>
   `;
