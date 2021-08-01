@@ -1,7 +1,7 @@
-const KEY = "3fd2be6f0c70a2a598f084ddfb75487c";
-const api = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${KEY}&page=1`;
+const apinumber = "3fd2be6f0c70a2a598f084ddfb75487c";
+const api = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${apinumber}&page=1`;
 const image = "https://image.tmdb.org/t/p/w1280";
-const apiquery = `https://api.themoviedb.org/3/search/movie?api_key=${KEY}&query=`;
+const apiquery = `https://api.themoviedb.org/3/search/movie?api_key=${apinumber}&query=`;
 const form = document.getElementById("form");
 const main = document.getElementById("main");
 const search = document.getElementById("search");
@@ -23,9 +23,9 @@ const movieinfo = (movies) => {
   main.innerHTML = "";
   movies.forEach((movie) => {
     const { title, poster_path, vote_average, overview } = movie;
-    const movieElement = document.createElement("div");
-    movieElement.classList.add("movie");
-    movieElement.innerHTML = `
+    const moviesection = document.createElement("div");
+    moviesection.classList.add("movie");
+    moviesection.innerHTML = `
     <img
       src="${image + poster_path}"
       alt="${title}"
@@ -38,7 +38,7 @@ const movieinfo = (movies) => {
       ${overview}
     </div>
   `;
-    main.appendChild(movieElement);
+    main.appendChild(moviesection);
   });
 };
 
