@@ -30,10 +30,10 @@ const movieinfo = (movies) => {
       src="${image + poster_path}"
       alt="${title}"
     />
-    <div class="movie-info">
+    <div >
       <h3 style="font-size:80px;">${title}</h3>
     </div>
-    <div style="font-size:80px;"class="overview">
+    <div style="font-size:80px;">
       <h3 style="font-size:80px;">Movie Info</h3>
       ${overview}
     </div>
