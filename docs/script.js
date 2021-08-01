@@ -23,9 +23,9 @@ const movieinfo = (movies) => {
   main.innerHTML = "";
   movies.forEach((movie) => {
     const { title, poster_path, vote_average, overview } = movie;
-    const movieElement = document.createElement("div");
-    movieElement.classList.add("movie");
-    movieElement.innerHTML = `
+    const moviearticle = document.createElement("div");
+    moviearticle.classList.add("movie");
+    moviearticle.innerHTML = `
     <img
       src="${image + poster_path}"
       alt="${title}"
@@ -38,7 +38,7 @@ const movieinfo = (movies) => {
       ${overview}
     </div>
   `;
-    main.appendChild(movieElement);
+    main.appendChild(moviearticle);
   });
 };
 
