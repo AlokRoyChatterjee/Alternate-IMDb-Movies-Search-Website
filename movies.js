@@ -30,11 +30,11 @@ const movieinfo = (movies) => {
       src="${image + poster_path}"
       alt="${title}"
     />
-    <div class="movie-info">
+    <div >
       <h3>${title}</h3>
     </div>
-    <div class="overview">
-      <h3>Overview</h3>
+    <div >
+      <h3>Movie Info</h3>
       ${overview}
     </div>
   `;
